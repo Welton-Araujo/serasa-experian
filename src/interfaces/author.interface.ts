@@ -5,23 +5,23 @@ export interface IAuthor {
   name: string;
   email: string;
   password: string;
-  bio?: string;
+  bio: string | null;  
   createdAt: Date;
   updatedAt: Date;
   posts?: Post[];
-  metadata?: Metadata;
+  metadata?: Metadata | null;  
 }
 
 export interface IAuthorCreate {
   name: string;
   email: string;
   password: string;
-  bio?: string;
+  bio?: string | null;  
 }
 
 export interface IAuthorUpdate {
   name?: string;
   email?: string;
   password?: string;
-  bio?: string;
+  bio?: string | null; 
 }

@@ -11,16 +11,16 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "@config/*": ["config/*"],
-      "@controllers/*": ["controllers/*"],
-      "@dtos/*": ["dtos/*"],
-      "@interfaces/*": ["interfaces/*"],
-      "@middlewares/*": ["middlewares/*"],
-      "@repositories/*": ["repositories/*"],
-      "@services/*": ["services/*"],
-      "@utils/*": ["utils/*"],
-      "@validations/*": ["validations/*"]
-    }
+        "@config/*": ["./src/config/*"],
+        "@controllers/*": ["./src/controllers/*"],
+        "@dtos/*": ["./src/dtos/*"],
+        "@interfaces/*": ["./src/interfaces/*"],
+        "@middlewares/*": ["./src/middlewares/*"],
+        "@repositories/*": ["./src/repositories/*"],
+        "@services/*": ["./src/services/*"],
+        "@utils/*": ["./src/utils/*"],
+        "@validations/*": ["./src/validations/*"]
+}
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]

@@ -1,4 +1,4 @@
-# Blog Pessoal - API
+# Serasa Blog Pessoal - API
 
 Uma aplicação web de blog pessoal com autenticação, posts e filtros, construída com Node.js, TypeScript, Prisma e PostgreSQL.
 

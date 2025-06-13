@@ -6,9 +6,7 @@ import morgan from 'morgan';
 import { StatusCodes } from 'http-status-codes';
 import 'express-async-errors';
 
-// Configuração do servidor
 const app = express();
-const PORT = process.env.PORT || 3000;
 
 // Middlewares
 app.use(cors());
@@ -39,21 +37,5 @@ app.use((req, res) => {
 // Error Handler
 import errorHandler from '@middlewares/error.middleware';
 app.use(errorHandler);
-
-// Inicia o servidor
-app.listen(PORT, () => {
-  console.log(`\n🚀 Servidor rodando na porta ${PORT}`);
-});
-
-// Tratamento de encerramento
-process.on('SIGINT', () => {
-  console.log('\n🔴 Servidor encerrado');
-  process.exit(0);
-});
-
-process.on('SIGTERM', () => {
-  console.log('\n🔴 Servidor finalizado');
-  process.exit(0);
-});
 
 export default app;
